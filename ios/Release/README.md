@@ -1,39 +1,39 @@
 # Release 2.0 – GazCoMonitor
 
-Katalog zawiera wszystko, co jest potrzebne do wydania wersji 2.0 w App Store.
+This directory contains everything needed to release version 2.0 on the App Store.
 
-| Plik | Zawartość |
+| File | Contents |
 |---|---|
-| [AppStoreAudit.md](AppStoreAudit.md) | Jak dziś wygląda wersja 1.0 w App Store i co trzeba poprawić |
-| [metadata/pl.md](metadata/pl.md) | Nazwa, podtytuł, opis, słowa kluczowe, „Co nowego” – PL |
-| [metadata/en.md](metadata/en.md) | To samo – EN |
-| [AppReviewNotes.md](AppReviewNotes.md) | Notatki dla recenzenta Apple (sprzęt BLE, tło, powiadomienia) |
-| [PrivacyPolicy.md](PrivacyPolicy.md) | Treść polityki prywatności do opublikowania pod publicznym URL |
-| [screenshots/](screenshots/) | Zrzuty z symulatora: iPhone 6.9" (1320×2868) i Apple Watch Ultra (422×514), PL/EN |
+| [AppStoreAudit.md](AppStoreAudit.md) | What version 1.0 looks like on the App Store today and what needs fixing (in Polish) |
+| [metadata/pl.md](metadata/pl.md) | Name, subtitle, description, keywords, "What's New" – Polish |
+| [metadata/en.md](metadata/en.md) | The same – English |
+| [AppReviewNotes.md](AppReviewNotes.md) | Notes for the Apple reviewer (BLE hardware, background mode, notifications) |
+| [PrivacyPolicy.md](PrivacyPolicy.md) | Privacy policy text to publish at a public URL |
+| [screenshots/](screenshots/) | Simulator screenshots: iPhone 6.9" (1320×2868) and Apple Watch Ultra (422×514), PL/EN |
 
-## Wersja
+## Version
 - Marketing: **2.0**, build **5** (`project.yml`)
-- iOS 18.0+, watchOS 11.0+ (w sklepie dziś: iOS 17.4+)
-- Aplikacja na zegarek działa samodzielnie (`WKRunsIndependentlyOfCompanionApp`)
+- iOS 18.0+, watchOS 11.0+ (currently in the store: iOS 17.4+)
+- The watch app runs independently (`WKRunsIndependentlyOfCompanionApp`)
 
-## Checklist przed wysłaniem
+## Pre-submission checklist
 
-### Kod / build
-- [x] Lokalizacja PL/EN (aplikacja, zegarek, widget, nazwa pod ikoną, opis Bluetooth)
-- [x] `ITSAppUsesNonExemptEncryption = NO` (brak pytania o szyfrowanie)
-- [x] Podpisywanie zespołem płatnym `JMMW48F6X4`, App Group, Time Sensitive
-- [ ] Nowa ikona aplikacji (patrz audyt, pkt 6) – iPhone + zegarek
-- [ ] Tryb demo w buildzie Release dla recenzenta (patrz AppReviewNotes) – zalecane
-- [ ] Test na prawdziwym czujniku: połączenie, ponowne łączenie, alarm, komplikacja po 15 min
-- [ ] Archive → Validate → Upload (schemat `GazCoMonitor`, konfiguracja Release)
+### Code / build
+- [x] PL/EN localization (app, watch, widget, name under the icon, Bluetooth usage description)
+- [x] `ITSAppUsesNonExemptEncryption = NO` (no encryption question)
+- [x] Signing with the paid team `JMMW48F6X4`, App Group, Time Sensitive
+- [ ] New app icon (see audit, item 6) – iPhone + watch
+- [ ] Demo mode in the Release build for the reviewer (see AppReviewNotes) – recommended
+- [ ] Test with a real sensor: connection, reconnection, alarm, complication after 15 min
+- [ ] Archive → Validate → Upload (scheme `GazCoMonitor`, Release configuration)
 
 ### App Store Connect
-- [ ] Dodać lokalizację **Polski** (dziś tylko English)
-- [ ] Uzupełnić metadane z `metadata/pl.md` i `metadata/en.md`
-- [ ] Podmienić zrzuty ekranu iPhone i **dodać zrzuty Apple Watch**
-- [ ] Opublikować politykę prywatności i podmienić URL (dziś LinkedIn)
+- [ ] Add the **Polish** localization (currently English only)
+- [ ] Fill in the metadata from `metadata/pl.md` and `metadata/en.md`
+- [ ] Replace the iPhone screenshots and **add Apple Watch screenshots**
+- [ ] Publish the privacy policy and replace the URL (currently LinkedIn)
 - [ ] Support URL
-- [ ] Kategoria dodatkowa: zmienić „Developer Tools” → „Lifestyle” (lub usunąć)
-- [ ] Accessibility: zadeklarować VoiceOver, Dark Interface, Larger Text
-- [ ] App Review Information: wkleić notatki, dołączyć film z działania z czujnikiem
-- [ ] Prywatność aplikacji: „Data Not Collected” pozostaje prawdziwe (dane tylko lokalnie)
+- [ ] Secondary category: change "Developer Tools" → "Lifestyle" (or remove it)
+- [ ] Accessibility: declare VoiceOver, Dark Interface, Larger Text
+- [ ] App Review Information: paste the notes, attach a video of the app working with the sensor
+- [ ] App privacy: "Data Not Collected" stays true (data is local only)
