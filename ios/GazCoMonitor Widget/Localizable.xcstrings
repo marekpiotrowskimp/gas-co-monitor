@@ -1,0 +1,108 @@
+{
+  "sourceLanguage": "pl",
+  "strings": {
+    "%@%%": {},
+    "Aktualny poziom CO i gazu z czujnika.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Current CO and gas level from the sensor."
+          }
+        }
+      }
+    },
+    "ALARM %@ %@%%": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ALARM %1$@ %2$@%%"
+          }
+        }
+      }
+    },
+    "Brak danych": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No data"
+          }
+        }
+      }
+    },
+    "CO": {},
+    "CO i Gaz": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CO and Gas"
+          }
+        }
+      }
+    },
+    "Czujnik": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sensor"
+          }
+        }
+      }
+    },
+    "Czujnik Gaz / CO": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gas / CO sensor"
+          }
+        }
+      }
+    },
+    "Gaz": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gas"
+          }
+        }
+      }
+    },
+    "Gaz / CO": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gas / CO"
+          }
+        }
+      }
+    },
+    "Gaz / CO: brak danych": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gas / CO: no data"
+          }
+        }
+      }
+    },
+    "Wybierz, który odczyt pokazać.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose which reading to show."
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

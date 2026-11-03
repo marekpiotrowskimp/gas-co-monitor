@@ -1,0 +1,929 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FE6064A85CBF61789830A14 /* GazCoMonitor iOS Widget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 49B93176E4C7A60570EFC559 /* GazCoMonitor iOS Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		15248518D074F666D00F2D2C /* SensorWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CE41C9B93B744326A238B9 /* SensorWidget.swift */; };
+		1D7E3A5D7BFE170FD84885F7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEB9DF503367C7753DA38EB /* MainView.swift */; };
+		1DF644598FDE676B37D887BE /* GasCoKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6F99B306BB5B342BD7E44D87 /* GasCoKit */; };
+		24EA012B6C24DE3AE057392F /* GasCoKit in Frameworks */ = {isa = PBXBuildFile; productRef = 738F8236096647E1EA34A33F /* GasCoKit */; };
+		3415CE60A9019CE67DD2FBAF /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 4C41A2B1A8D7239D58FCC736 /* Localizable.xcstrings */; };
+		34282CD574CA26C11D89601E /* GazCoMonitor Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 98C02F2A51D600B26C6062FA /* GazCoMonitor Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3DF03D3D9E5C51B29F6837C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21DE5F52D09D955128BC694F /* Assets.xcassets */; };
+		3EBF14E717094A5CC0E2A2CE /* GasCoKit in Frameworks */ = {isa = PBXBuildFile; productRef = B706E8E8C6BAE1214CAFE565 /* GasCoKit */; };
+		40046626F6EC438E260116C6 /* SensorTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372C6AAF5D1143635C153B43 /* SensorTimelineProvider.swift */; };
+		40BDCC5379C92A618B2015BA /* HistoryRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05FF3FC6C8A7816679932F4 /* HistoryRecorder.swift */; };
+		4A6E1777BFC689B339C041C6 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9CB08F61CAFB910F8608DE4A /* InfoPlist.xcstrings */; };
+		6145D69E1950083D8C89EF1F /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1E90C6EC85D4E4AD15F73CC4 /* InfoPlist.xcstrings */; };
+		6390E80CEB42CF02CCB863A7 /* SensorTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372C6AAF5D1143635C153B43 /* SensorTimelineProvider.swift */; };
+		675DABD38C27C2E0C71E8ADF /* SensorSystemWidgetViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAB64BE56ECA4F45604D7E4 /* SensorSystemWidgetViews.swift */; };
+		6D84CB095068E9965D6039D5 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F01493E945907DC308B030DD /* Localizable.xcstrings */; };
+		6E900067CA7DC46B7469578D /* SensorWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EDFE597200B4BCB8EB3203 /* SensorWidgetView.swift */; };
+		6EF3C390C5F07629F3AB82F4 /* AlarmNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCCA0D3FBB9151BCF1D71D2 /* AlarmNotifier.swift */; };
+		7424F2CEDE820117325240DB /* SensorWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EDFE597200B4BCB8EB3203 /* SensorWidgetView.swift */; };
+		76E1FAF9A89E624A9B7CD4E6 /* SensorSystemWidgetViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAB64BE56ECA4F45604D7E4 /* SensorSystemWidgetViews.swift */; };
+		7CB2DF75E3B546FB2AF6FB0E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 33500A48DBF1D9DAED210C36 /* Localizable.xcstrings */; };
+		864A88FF3DE81D2243AEFB60 /* SensorWidgetIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CAD0EDF5CFCB4E9D90C010 /* SensorWidgetIntent.swift */; };
+		9036E15A0535120DF912A8F8 /* SensorPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636AF25C15FC7C40C93F0526 /* SensorPage.swift */; };
+		91BBAE669899C495957DB9A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7597DC07CF0B4B3C4020619F /* Preview Assets.xcassets */; };
+		9374A33449FC8153839AC195 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404479F129649697C97AF32 /* MainView.swift */; };
+		9FC802C84E94FD1BCF2F6E3D /* GasCoKit in Frameworks */ = {isa = PBXBuildFile; productRef = E03D379B421E78134F3E9694 /* GasCoKit */; };
+		A4948BB65D05EB4466C31608 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 388352418EDA6020A815541E /* Assets.xcassets */; };
+		AE0408B54557700ABCB7F18D /* GasCoMonitorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968DE301E10D9CA01B77D396 /* GasCoMonitorApp.swift */; };
+		B15C1D8E9E4B6AA8D1FABCA4 /* GazCoMonitor Widget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 479A146F24AF6E3192B4BC63 /* GazCoMonitor Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B931C42560B523E89B765A00 /* AlarmHaptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45AA35644A2CFD8263B701D /* AlarmHaptics.swift */; };
+		B9B1B2D42FCC689F6515D7CF /* GasCoMonitorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E1DE4FBAB8C1A270FF368F /* GasCoMonitorApp.swift */; };
+		C582A570AE5F359B15771314 /* SensorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6651700660A51E2EA84A33 /* SensorPickerView.swift */; };
+		D28F90D71B6751717897B1D2 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 340FD8D762BB384E3D2EEF90 /* InfoPlist.xcstrings */; };
+		D8659361C6E3AB284B65F058 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1E90C6EC85D4E4AD15F73CC4 /* InfoPlist.xcstrings */; };
+		E536445158678EF7654B6574 /* SensorWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CE41C9B93B744326A238B9 /* SensorWidget.swift */; };
+		E83800D5619F048A0FEDDD65 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F46D397B7109B0C377B418F /* Preview Assets.xcassets */; };
+		EB47FB334C8B156C1A86A231 /* HistoryChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF8B345D747179ADC5727D4 /* HistoryChartView.swift */; };
+		EE24EB2AB241338DE39309D0 /* SummaryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C2DB2A1EBED852E3157C9E /* SummaryPage.swift */; };
+		F1230A92922D2C22D9EE9EFB /* SensorWidgetIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CAD0EDF5CFCB4E9D90C010 /* SensorWidgetIntent.swift */; };
+		FDA3EBED3D395D3A09352FD2 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 33500A48DBF1D9DAED210C36 /* Localizable.xcstrings */; };
+		FDE5A85E39FFDA54E7F4CA02 /* SensorSourceCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319EE1224E5BB9CDC8BC0D47 /* SensorSourceCoordinator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		47A6CD14EA7DBDC950421532 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE23A2ECF09C8BB501D98DBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE6E2B4C28826F97C164D01A;
+			remoteInfo = "GazCoMonitor Watch App";
+		};
+		49C5823BF47EC8B2A7FA2882 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE23A2ECF09C8BB501D98DBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD79060563E2C7ADE6869F52;
+			remoteInfo = "GazCoMonitor Widget";
+		};
+		69FD5548D5372E54014A4F20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE23A2ECF09C8BB501D98DBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B96B905144007CB5FCCA08C3;
+			remoteInfo = "GazCoMonitor iOS Widget";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		118FCAF87407722860A676B5 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				34282CD574CA26C11D89601E /* GazCoMonitor Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A55545D5AE3CA755FCE1DA9 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0FE6064A85CBF61789830A14 /* GazCoMonitor iOS Widget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C4F7EEC1E2CDF9629317B2F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B15C1D8E9E4B6AA8D1FABCA4 /* GazCoMonitor Widget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1E90C6EC85D4E4AD15F73CC4 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		21DE5F52D09D955128BC694F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22EDFE597200B4BCB8EB3203 /* SensorWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorWidgetView.swift; sourceTree = "<group>"; };
+		2E6651700660A51E2EA84A33 /* SensorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorPickerView.swift; sourceTree = "<group>"; };
+		319EE1224E5BB9CDC8BC0D47 /* SensorSourceCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorSourceCoordinator.swift; sourceTree = "<group>"; };
+		33500A48DBF1D9DAED210C36 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		340FD8D762BB384E3D2EEF90 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		372C6AAF5D1143635C153B43 /* SensorTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorTimelineProvider.swift; sourceTree = "<group>"; };
+		37A1D58CD645D748CE3440C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		388352418EDA6020A815541E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A2A12E8398B86D6C690D1A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		42E1DE4FBAB8C1A270FF368F /* GasCoMonitorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasCoMonitorApp.swift; sourceTree = "<group>"; };
+		479A146F24AF6E3192B4BC63 /* GazCoMonitor Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GazCoMonitor Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49B93176E4C7A60570EFC559 /* GazCoMonitor iOS Widget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = "GazCoMonitor iOS Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C41A2B1A8D7239D58FCC736 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		636AF25C15FC7C40C93F0526 /* SensorPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorPage.swift; sourceTree = "<group>"; };
+		7597DC07CF0B4B3C4020619F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		81CE41C9B93B744326A238B9 /* SensorWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorWidget.swift; sourceTree = "<group>"; };
+		88CAD0EDF5CFCB4E9D90C010 /* SensorWidgetIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorWidgetIntent.swift; sourceTree = "<group>"; };
+		8AAB64BE56ECA4F45604D7E4 /* SensorSystemWidgetViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorSystemWidgetViews.swift; sourceTree = "<group>"; };
+		8F46D397B7109B0C377B418F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8FF8B345D747179ADC5727D4 /* HistoryChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryChartView.swift; sourceTree = "<group>"; };
+		968DE301E10D9CA01B77D396 /* GasCoMonitorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasCoMonitorApp.swift; sourceTree = "<group>"; };
+		98C02F2A51D600B26C6062FA /* GazCoMonitor Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GazCoMonitor Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98C2DB2A1EBED852E3157C9E /* SummaryPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryPage.swift; sourceTree = "<group>"; };
+		9CB08F61CAFB910F8608DE4A /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		9CEB9DF503367C7753DA38EB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		A5E5144DAC695B35EE394C20 /* GazCoMonitor.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = GazCoMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBCCA0D3FBB9151BCF1D71D2 /* AlarmNotifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmNotifier.swift; sourceTree = "<group>"; };
+		C22C25C7485F4E67557425E1 /* GazCoMonitor Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "GazCoMonitor Watch App.entitlements"; sourceTree = "<group>"; };
+		CCAC12E377FC64C3E5C9E224 /* GasCoKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GasCoKit; path = GasCoKit; sourceTree = SOURCE_ROOT; };
+		D404479F129649697C97AF32 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		D40DD57A895E0C08749F71D8 /* GazCoMonitor Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "GazCoMonitor Widget.entitlements"; sourceTree = "<group>"; };
+		D45AA35644A2CFD8263B701D /* AlarmHaptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmHaptics.swift; sourceTree = "<group>"; };
+		E05FF3FC6C8A7816679932F4 /* HistoryRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRecorder.swift; sourceTree = "<group>"; };
+		F01493E945907DC308B030DD /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		FE90CB1686FACD377926B92A /* GazCoMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GazCoMonitor.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		005E677AB6EA93A0FCB58B59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24EA012B6C24DE3AE057392F /* GasCoKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		072E4D564CD0C379092E4A0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FC802C84E94FD1BCF2F6E3D /* GasCoKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91CEAB317DF9A380EA3B3247 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EBF14E717094A5CC0E2A2CE /* GasCoKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5FC371DD9B5258837D8BBEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DF644598FDE676B37D887BE /* GasCoKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E1439A93D4760A0988E6DD3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7597DC07CF0B4B3C4020619F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		41F0DF83AE4EA79AA25ADAD1 /* GazCoMonitor Widget */ = {
+			isa = PBXGroup;
+			children = (
+				D40DD57A895E0C08749F71D8 /* GazCoMonitor Widget.entitlements */,
+				37A1D58CD645D748CE3440C7 /* Info.plist */,
+				1E90C6EC85D4E4AD15F73CC4 /* InfoPlist.xcstrings */,
+				33500A48DBF1D9DAED210C36 /* Localizable.xcstrings */,
+				8AAB64BE56ECA4F45604D7E4 /* SensorSystemWidgetViews.swift */,
+				372C6AAF5D1143635C153B43 /* SensorTimelineProvider.swift */,
+				81CE41C9B93B744326A238B9 /* SensorWidget.swift */,
+				88CAD0EDF5CFCB4E9D90C010 /* SensorWidgetIntent.swift */,
+				22EDFE597200B4BCB8EB3203 /* SensorWidgetView.swift */,
+			);
+			path = "GazCoMonitor Widget";
+			sourceTree = "<group>";
+		};
+		46D5E72966945E53078B51AF /* GazCoMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				BBCCA0D3FBB9151BCF1D71D2 /* AlarmNotifier.swift */,
+				388352418EDA6020A815541E /* Assets.xcassets */,
+				42E1DE4FBAB8C1A270FF368F /* GasCoMonitorApp.swift */,
+				FE90CB1686FACD377926B92A /* GazCoMonitor.entitlements */,
+				3A2A12E8398B86D6C690D1A6 /* Info.plist */,
+				340FD8D762BB384E3D2EEF90 /* InfoPlist.xcstrings */,
+				F01493E945907DC308B030DD /* Localizable.xcstrings */,
+				D404479F129649697C97AF32 /* MainView.swift */,
+				2E6651700660A51E2EA84A33 /* SensorPickerView.swift */,
+				6BCAA09BC9BC8E1CC0B3DD0D /* History */,
+				3E1439A93D4760A0988E6DD3 /* Preview Content */,
+			);
+			path = GazCoMonitor;
+			sourceTree = "<group>";
+		};
+		51E35B329604E8DF9DCFDF82 /* GazCoMonitor Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				D45AA35644A2CFD8263B701D /* AlarmHaptics.swift */,
+				21DE5F52D09D955128BC694F /* Assets.xcassets */,
+				968DE301E10D9CA01B77D396 /* GasCoMonitorApp.swift */,
+				C22C25C7485F4E67557425E1 /* GazCoMonitor Watch App.entitlements */,
+				9CB08F61CAFB910F8608DE4A /* InfoPlist.xcstrings */,
+				4C41A2B1A8D7239D58FCC736 /* Localizable.xcstrings */,
+				9CEB9DF503367C7753DA38EB /* MainView.swift */,
+				636AF25C15FC7C40C93F0526 /* SensorPage.swift */,
+				319EE1224E5BB9CDC8BC0D47 /* SensorSourceCoordinator.swift */,
+				98C2DB2A1EBED852E3157C9E /* SummaryPage.swift */,
+				C60D6F3DCF026D5EB6A80AAB /* Preview Content */,
+			);
+			path = "GazCoMonitor Watch App";
+			sourceTree = "<group>";
+		};
+		57BA54D2CC129F2758F5BB8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49B93176E4C7A60570EFC559 /* GazCoMonitor iOS Widget.appex */,
+				98C02F2A51D600B26C6062FA /* GazCoMonitor Watch App.app */,
+				479A146F24AF6E3192B4BC63 /* GazCoMonitor Widget.appex */,
+				A5E5144DAC695B35EE394C20 /* GazCoMonitor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BCAA09BC9BC8E1CC0B3DD0D /* History */ = {
+			isa = PBXGroup;
+			children = (
+				8FF8B345D747179ADC5727D4 /* HistoryChartView.swift */,
+				E05FF3FC6C8A7816679932F4 /* HistoryRecorder.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		793DB68894D6EEED7FE3EB8B = {
+			isa = PBXGroup;
+			children = (
+				46D5E72966945E53078B51AF /* GazCoMonitor */,
+				51E35B329604E8DF9DCFDF82 /* GazCoMonitor Watch App */,
+				41F0DF83AE4EA79AA25ADAD1 /* GazCoMonitor Widget */,
+				D7D7F51F8A8D9F4CAE9595D9 /* Packages */,
+				57BA54D2CC129F2758F5BB8E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C60D6F3DCF026D5EB6A80AAB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8F46D397B7109B0C377B418F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D7D7F51F8A8D9F4CAE9595D9 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				CCAC12E377FC64C3E5C9E224 /* GasCoKit */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		91399E4402C0BC45565E5591 /* GazCoMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 213ACF16BA61D779DCEA40A3 /* Build configuration list for PBXNativeTarget "GazCoMonitor" */;
+			buildPhases = (
+				DA9A400DE655C4DC04248045 /* Sources */,
+				9D7BF01A9DB1F6E2D45D6CF2 /* Resources */,
+				91CEAB317DF9A380EA3B3247 /* Frameworks */,
+				2A55545D5AE3CA755FCE1DA9 /* Embed Foundation Extensions */,
+				118FCAF87407722860A676B5 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11D25DC9E97B5365667CF2EC /* PBXTargetDependency */,
+				F82019B9EFF53783AB8A67FB /* PBXTargetDependency */,
+			);
+			name = GazCoMonitor;
+			packageProductDependencies = (
+				B706E8E8C6BAE1214CAFE565 /* GasCoKit */,
+			);
+			productName = GazCoMonitor;
+			productReference = A5E5144DAC695B35EE394C20 /* GazCoMonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B96B905144007CB5FCCA08C3 /* GazCoMonitor iOS Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24B9AACBF21416A0AE7FC951 /* Build configuration list for PBXNativeTarget "GazCoMonitor iOS Widget" */;
+			buildPhases = (
+				ED23B7B9EBD1248EA76B4F97 /* Sources */,
+				9E3377B9CFA4932C0B8B6F8C /* Resources */,
+				B5FC371DD9B5258837D8BBEB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GazCoMonitor iOS Widget";
+			packageProductDependencies = (
+				6F99B306BB5B342BD7E44D87 /* GasCoKit */,
+			);
+			productName = "GazCoMonitor iOS Widget";
+			productReference = 49B93176E4C7A60570EFC559 /* GazCoMonitor iOS Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		DD79060563E2C7ADE6869F52 /* GazCoMonitor Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF311ACF2A175E964CEA5A1A /* Build configuration list for PBXNativeTarget "GazCoMonitor Widget" */;
+			buildPhases = (
+				044F590F3C56B303D157F50D /* Sources */,
+				C55E74FA5491739AC3CAA73B /* Resources */,
+				005E677AB6EA93A0FCB58B59 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GazCoMonitor Widget";
+			packageProductDependencies = (
+				738F8236096647E1EA34A33F /* GasCoKit */,
+			);
+			productName = "GazCoMonitor Widget";
+			productReference = 479A146F24AF6E3192B4BC63 /* GazCoMonitor Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		EE6E2B4C28826F97C164D01A /* GazCoMonitor Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64DE940964BD5720521B18B0 /* Build configuration list for PBXNativeTarget "GazCoMonitor Watch App" */;
+			buildPhases = (
+				03341FC4F16EFEADF3AFF094 /* Sources */,
+				32989DDB612DCECCDB62217E /* Resources */,
+				072E4D564CD0C379092E4A0A /* Frameworks */,
+				9C4F7EEC1E2CDF9629317B2F /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D29779D59EA18BB984E3ABB /* PBXTargetDependency */,
+			);
+			name = "GazCoMonitor Watch App";
+			packageProductDependencies = (
+				E03D379B421E78134F3E9694 /* GasCoKit */,
+			);
+			productName = "GazCoMonitor Watch App";
+			productReference = 98C02F2A51D600B26C6062FA /* GazCoMonitor Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE23A2ECF09C8BB501D98DBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					91399E4402C0BC45565E5591 = {
+						DevelopmentTeam = JMMW48F6X4;
+						ProvisioningStyle = Automatic;
+					};
+					B96B905144007CB5FCCA08C3 = {
+						DevelopmentTeam = JMMW48F6X4;
+						ProvisioningStyle = Automatic;
+					};
+					DD79060563E2C7ADE6869F52 = {
+						DevelopmentTeam = JMMW48F6X4;
+						ProvisioningStyle = Automatic;
+					};
+					EE6E2B4C28826F97C164D01A = {
+						DevelopmentTeam = JMMW48F6X4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B8139C2BF061048E72325C73 /* Build configuration list for PBXProject "GazCoMonitor" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = pl;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				pl,
+			);
+			mainGroup = 793DB68894D6EEED7FE3EB8B;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				90E3B40749326D5E9C19AF4A /* XCLocalSwiftPackageReference "GasCoKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91399E4402C0BC45565E5591 /* GazCoMonitor */,
+				EE6E2B4C28826F97C164D01A /* GazCoMonitor Watch App */,
+				DD79060563E2C7ADE6869F52 /* GazCoMonitor Widget */,
+				B96B905144007CB5FCCA08C3 /* GazCoMonitor iOS Widget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32989DDB612DCECCDB62217E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF03D3D9E5C51B29F6837C6 /* Assets.xcassets in Resources */,
+				4A6E1777BFC689B339C041C6 /* InfoPlist.xcstrings in Resources */,
+				3415CE60A9019CE67DD2FBAF /* Localizable.xcstrings in Resources */,
+				E83800D5619F048A0FEDDD65 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D7BF01A9DB1F6E2D45D6CF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4948BB65D05EB4466C31608 /* Assets.xcassets in Resources */,
+				D28F90D71B6751717897B1D2 /* InfoPlist.xcstrings in Resources */,
+				6D84CB095068E9965D6039D5 /* Localizable.xcstrings in Resources */,
+				91BBAE669899C495957DB9A3 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E3377B9CFA4932C0B8B6F8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6145D69E1950083D8C89EF1F /* InfoPlist.xcstrings in Resources */,
+				7CB2DF75E3B546FB2AF6FB0E /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C55E74FA5491739AC3CAA73B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8659361C6E3AB284B65F058 /* InfoPlist.xcstrings in Resources */,
+				FDA3EBED3D395D3A09352FD2 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03341FC4F16EFEADF3AFF094 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B931C42560B523E89B765A00 /* AlarmHaptics.swift in Sources */,
+				AE0408B54557700ABCB7F18D /* GasCoMonitorApp.swift in Sources */,
+				1D7E3A5D7BFE170FD84885F7 /* MainView.swift in Sources */,
+				9036E15A0535120DF912A8F8 /* SensorPage.swift in Sources */,
+				FDE5A85E39FFDA54E7F4CA02 /* SensorSourceCoordinator.swift in Sources */,
+				EE24EB2AB241338DE39309D0 /* SummaryPage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044F590F3C56B303D157F50D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76E1FAF9A89E624A9B7CD4E6 /* SensorSystemWidgetViews.swift in Sources */,
+				40046626F6EC438E260116C6 /* SensorTimelineProvider.swift in Sources */,
+				15248518D074F666D00F2D2C /* SensorWidget.swift in Sources */,
+				864A88FF3DE81D2243AEFB60 /* SensorWidgetIntent.swift in Sources */,
+				6E900067CA7DC46B7469578D /* SensorWidgetView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA9A400DE655C4DC04248045 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EF3C390C5F07629F3AB82F4 /* AlarmNotifier.swift in Sources */,
+				B9B1B2D42FCC689F6515D7CF /* GasCoMonitorApp.swift in Sources */,
+				EB47FB334C8B156C1A86A231 /* HistoryChartView.swift in Sources */,
+				40BDCC5379C92A618B2015BA /* HistoryRecorder.swift in Sources */,
+				9374A33449FC8153839AC195 /* MainView.swift in Sources */,
+				C582A570AE5F359B15771314 /* SensorPickerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED23B7B9EBD1248EA76B4F97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				675DABD38C27C2E0C71E8ADF /* SensorSystemWidgetViews.swift in Sources */,
+				6390E80CEB42CF02CCB863A7 /* SensorTimelineProvider.swift in Sources */,
+				E536445158678EF7654B6574 /* SensorWidget.swift in Sources */,
+				F1230A92922D2C22D9EE9EFB /* SensorWidgetIntent.swift in Sources */,
+				7424F2CEDE820117325240DB /* SensorWidgetView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D29779D59EA18BB984E3ABB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD79060563E2C7ADE6869F52 /* GazCoMonitor Widget */;
+			targetProxy = 49C5823BF47EC8B2A7FA2882 /* PBXContainerItemProxy */;
+		};
+		11D25DC9E97B5365667CF2EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE6E2B4C28826F97C164D01A /* GazCoMonitor Watch App */;
+			targetProxy = 47A6CD14EA7DBDC950421532 /* PBXContainerItemProxy */;
+		};
+		F82019B9EFF53783AB8A67FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B96B905144007CB5FCCA08C3 /* GazCoMonitor iOS Widget */;
+			targetProxy = 69FD5548D5372E54014A4F20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12BE1ED2980A893257A815C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "GazCoMonitor Widget/GazCoMonitor Widget.entitlements";
+				INFOPLIST_FILE = "GazCoMonitor Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Gaz / CO";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ios.piron.marek.piotrowski.GazCoMonitor.watchkitapp.widget;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		1571795227AB45D9CCC9BB78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "GazCoMonitor Widget/GazCoMonitor Widget.entitlements";
+				INFOPLIST_FILE = "GazCoMonitor iOS Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Gaz / CO";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ios.piron.marek.piotrowski.GazCoMonitor.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		31FF6667956DEAAD4555FC02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GazCoMonitor/GazCoMonitor.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_ASSET_PATHS = "\"GazCoMonitor/Preview Content\"";
+				INFOPLIST_FILE = GazCoMonitor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Gaz / CO";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Aplikacja łączy się przez Bluetooth z czujnikiem, aby pokazywać poziom CO i gazu oraz ostrzegać o niebezpieczeństwie.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ios.piron.marek.piotrowski.GazCoMonitor;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3C55816BC55E6360FF6F653F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "GazCoMonitor Watch App/GazCoMonitor Watch App.entitlements";
+				DEVELOPMENT_ASSET_PATHS = "\"GazCoMonitor Watch App/Preview Content\"";
+				INFOPLIST_KEY_CFBundleDisplayName = "Gaz / CO";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Aplikacja łączy się przez Bluetooth z czujnikiem, aby pokazywać poziom CO i gazu oraz ostrzegać o niebezpieczeństwie.";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = ios.piron.marek.piotrowski.GazCoMonitor;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = ios.piron.marek.piotrowski.GazCoMonitor.watchkitapp;
+				PRODUCT_NAME = GazCoMonitor;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		57F0119147F781B06AE96873 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "GazCoMonitor Watch App/GazCoMonitor Watch App.entitlements";
+				DEVELOPMENT_ASSET_PATHS = "\"GazCoMonitor Watch App/Preview Content\"";
+				INFOPLIST_KEY_CFBundleDisplayName = "Gaz / CO";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Aplikacja łączy się przez Bluetooth z czujnikiem, aby pokazywać poziom CO i gazu oraz ostrzegać o niebezpieczeństwie.";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = ios.piron.marek.piotrowski.GazCoMonitor;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = ios.piron.marek.piotrowski.GazCoMonitor.watchkitapp;
+				PRODUCT_NAME = GazCoMonitor;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		8175AEDB65303064B9706AB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "GazCoMonitor Widget/GazCoMonitor Widget.entitlements";
+				INFOPLIST_FILE = "GazCoMonitor iOS Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Gaz / CO";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ios.piron.marek.piotrowski.GazCoMonitor.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8F83B91699D2AB4266C1A6C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 5;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = JMMW48F6X4;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 2.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		924F1DC38280CC2002343202 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GazCoMonitor/GazCoMonitor.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_ASSET_PATHS = "\"GazCoMonitor/Preview Content\"";
+				INFOPLIST_FILE = GazCoMonitor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Gaz / CO";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Aplikacja łączy się przez Bluetooth z czujnikiem, aby pokazywać poziom CO i gazu oraz ostrzegać o niebezpieczeństwie.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ios.piron.marek.piotrowski.GazCoMonitor;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CAE63EF91FB16FA7BC77D884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "GazCoMonitor Widget/GazCoMonitor Widget.entitlements";
+				INFOPLIST_FILE = "GazCoMonitor Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Gaz / CO";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ios.piron.marek.piotrowski.GazCoMonitor.watchkitapp.widget;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		D12C401224920B9F71858FFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 5;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = JMMW48F6X4;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 2.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		213ACF16BA61D779DCEA40A3 /* Build configuration list for PBXNativeTarget "GazCoMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31FF6667956DEAAD4555FC02 /* Debug */,
+				924F1DC38280CC2002343202 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		24B9AACBF21416A0AE7FC951 /* Build configuration list for PBXNativeTarget "GazCoMonitor iOS Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1571795227AB45D9CCC9BB78 /* Debug */,
+				8175AEDB65303064B9706AB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		64DE940964BD5720521B18B0 /* Build configuration list for PBXNativeTarget "GazCoMonitor Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C55816BC55E6360FF6F653F /* Debug */,
+				57F0119147F781B06AE96873 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B8139C2BF061048E72325C73 /* Build configuration list for PBXProject "GazCoMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F83B91699D2AB4266C1A6C3 /* Debug */,
+				D12C401224920B9F71858FFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FF311ACF2A175E964CEA5A1A /* Build configuration list for PBXNativeTarget "GazCoMonitor Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12BE1ED2980A893257A815C8 /* Debug */,
+				CAE63EF91FB16FA7BC77D884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		90E3B40749326D5E9C19AF4A /* XCLocalSwiftPackageReference "GasCoKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = GasCoKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6F99B306BB5B342BD7E44D87 /* GasCoKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GasCoKit;
+		};
+		738F8236096647E1EA34A33F /* GasCoKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GasCoKit;
+		};
+		B706E8E8C6BAE1214CAFE565 /* GasCoKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GasCoKit;
+		};
+		E03D379B421E78134F3E9694 /* GasCoKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GasCoKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CE23A2ECF09C8BB501D98DBF /* Project object */;
+}

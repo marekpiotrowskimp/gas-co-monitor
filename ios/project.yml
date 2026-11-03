@@ -1,0 +1,125 @@
+name: GazCoMonitor
+options:
+  bundleIdPrefix: ios.piron.marek.piotrowski
+  deploymentTarget:
+    iOS: "18.0"
+    watchOS: "11.0"
+  createIntermediateGroups: true
+  developmentLanguage: pl
+settings:
+  base:
+    DEVELOPMENT_TEAM: JMMW48F6X4
+    CODE_SIGN_STYLE: Automatic
+    SWIFT_VERSION: "6.0"
+    MARKETING_VERSION: "2.0"
+    CURRENT_PROJECT_VERSION: "5"
+    LOCALIZATION_PREFERS_STRING_CATALOGS: YES
+    SWIFT_EMIT_LOC_STRINGS: YES
+    DEAD_CODE_STRIPPING: YES
+    GENERATE_INFOPLIST_FILE: YES
+    INFOPLIST_KEY_ITSAppUsesNonExemptEncryption: NO
+packages:
+  GasCoKit:
+    path: GasCoKit
+targets:
+  GazCoMonitor:
+    type: application
+    platform: iOS
+    sources:
+      - path: GazCoMonitor
+    dependencies:
+      - package: GasCoKit
+      - target: GazCoMonitor Watch App
+      - target: GazCoMonitor iOS Widget
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: ios.piron.marek.piotrowski.GazCoMonitor
+        TARGETED_DEVICE_FAMILY: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        DEVELOPMENT_ASSET_PATHS: "\"GazCoMonitor/Preview Content\""
+        CODE_SIGN_ENTITLEMENTS: GazCoMonitor/GazCoMonitor.entitlements
+        INFOPLIST_KEY_CFBundleDisplayName: Gaz / CO
+        INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription: "Aplikacja łączy się przez Bluetooth z czujnikiem, aby pokazywać poziom CO i gazu oraz ostrzegać o niebezpieczeństwie."
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+        SUPPORTS_MACCATALYST: NO
+    info:
+      path: GazCoMonitor/Info.plist
+      properties:
+        UIBackgroundModes: [bluetooth-central]
+  GazCoMonitor Watch App:
+    type: application
+    platform: watchOS
+    sources:
+      - path: GazCoMonitor Watch App
+    dependencies:
+      - package: GasCoKit
+      - target: GazCoMonitor Widget
+    settings:
+      base:
+        PRODUCT_NAME: GazCoMonitor
+        PRODUCT_BUNDLE_IDENTIFIER: ios.piron.marek.piotrowski.GazCoMonitor.watchkitapp
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        DEVELOPMENT_ASSET_PATHS: "\"GazCoMonitor Watch App/Preview Content\""
+        CODE_SIGN_ENTITLEMENTS: "GazCoMonitor Watch App/GazCoMonitor Watch App.entitlements"
+        INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription: "Aplikacja łączy się przez Bluetooth z czujnikiem, aby pokazywać poziom CO i gazu oraz ostrzegać o niebezpieczeństwie."
+        INFOPLIST_KEY_CFBundleDisplayName: Gaz / CO
+        INFOPLIST_KEY_WKCompanionAppBundleIdentifier: ios.piron.marek.piotrowski.GazCoMonitor
+        INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp: YES
+        SKIP_INSTALL: YES
+  GazCoMonitor Widget:
+    type: app-extension
+    platform: watchOS
+    sources:
+      - path: GazCoMonitor Widget
+    dependencies:
+      - package: GasCoKit
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: ios.piron.marek.piotrowski.GazCoMonitor.watchkitapp.widget
+        CODE_SIGN_ENTITLEMENTS: GazCoMonitor Widget/GazCoMonitor Widget.entitlements
+        INFOPLIST_KEY_CFBundleDisplayName: Gaz / CO
+        SKIP_INSTALL: YES
+    info:
+      path: GazCoMonitor Widget/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+  GazCoMonitor iOS Widget:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: GazCoMonitor Widget
+        excludes:
+          - Info.plist
+          - "*.entitlements"
+    dependencies:
+      - package: GasCoKit
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: ios.piron.marek.piotrowski.GazCoMonitor.widget
+        CODE_SIGN_ENTITLEMENTS: GazCoMonitor Widget/GazCoMonitor Widget.entitlements
+        INFOPLIST_KEY_CFBundleDisplayName: Gaz / CO
+        TARGETED_DEVICE_FAMILY: "1"
+        SKIP_INSTALL: YES
+    info:
+      path: GazCoMonitor iOS Widget/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+schemes:
+  GazCoMonitor:
+    build:
+      targets:
+        GazCoMonitor: all
+    test:
+      targets:
+        - package: GasCoKit/GasCoKitTests
+  GazCoMonitor Watch App:
+    build:
+      targets:
+        GazCoMonitor Watch App: all

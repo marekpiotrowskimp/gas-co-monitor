@@ -1,0 +1,33 @@
+# system
+.DS_Store
+*.zip
+*.log
+
+# sekrety
+.env
+.env.*
+!.env.example
+secrets.h
+secrets.py
+raspberry-pi/config.py
+!config.example.py
+*.pem
+*.key
+*.p12
+*.mobileprovision
+
+# Xcode / Swift
+build/
+DerivedData/
+.build/
+xcuserdata/
+*.xcuserstate
+.swiftpm/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/

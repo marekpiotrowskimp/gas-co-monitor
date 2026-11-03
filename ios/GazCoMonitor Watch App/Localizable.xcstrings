@@ -1,0 +1,36 @@
+{
+  "sourceLanguage": "pl",
+  "strings": {
+    "Brak aktualnych danych": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No recent data"
+          }
+        }
+      }
+    },
+    "Gaz / CO": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gas / CO"
+          }
+        }
+      }
+    },
+    "Przez iPhone": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Via iPhone"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
